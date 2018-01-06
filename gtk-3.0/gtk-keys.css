@@ -47,6 +47,11 @@
   bind "<ctrl>e" { "move-cursor" (paragraph-ends, 1, 0) };
   bind "<shift><ctrl>e" { "move-cursor" (paragraph-ends, 1, 1) };
 
+  bind "<ctrl>v" { "move-cursor" (pages, 1, 0) };
+  bind "<shift><ctrl>v" { "move-cursor" (pages, 1, 1) };
+  bind "<alt>v" { "move-cursor" (pages, -1, 0) };
+  bind "<shift><alt>v" { "move-cursor" (pages, -1, 1) };
+
   bind "<alt>less" { "move-cursor" (buffer-ends, -1, 0) };
   bind "<alt>greater" { "move-cursor" (buffer-ends, 1, 0) };
 
