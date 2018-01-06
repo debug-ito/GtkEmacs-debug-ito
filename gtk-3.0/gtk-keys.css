@@ -47,6 +47,9 @@
   bind "<ctrl>e" { "move-cursor" (paragraph-ends, 1, 0) };
   bind "<shift><ctrl>e" { "move-cursor" (paragraph-ends, 1, 1) };
 
+  bind "<alt>less" { "move-cursor" (buffer-ends, -1, 0) };
+  bind "<alt>greater" { "move-cursor" (buffer-ends, 1, 0) };
+
   bind "<alt>w" { "copy-clipboard" () };
   bind "<ctrl>w" { "cut-clipboard" () };
   bind "<ctrl>y" { "paste-clipboard" () };
